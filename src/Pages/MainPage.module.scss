@@ -1,0 +1,122 @@
+body {
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+}
+.container {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  box-sizing: border-box;
+
+  img {
+    max-width:100%;
+  }
+
+  button {
+    cursor:pointer;
+  }
+
+  .nav__flex__mobile {
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    padding:1rem 1rem;
+
+    header {
+      flex-grow:1;
+      font-size:1.8rem;
+      font-weight:800;
+      letter-spacing: -1px;
+      margin-top:-3px;
+    }
+
+    .menu__icon {
+      width:16px;
+      height:16px;
+    }
+
+    img {
+      width:24px;
+      height:24px;
+    }
+
+
+  }
+
+  .product__desc__container {
+    padding:1rem;
+
+    span {
+      font-size:.85rem;
+      font-weight:bolder;
+      letter-spacing: 1px;
+      color:hsl(25, 100%, 65%);
+      text-transform:uppercase;
+    }
+    h2 {
+      color: hsl(220, 13%, 13%)
+    }
+
+    p {
+      color: hsl(219, 9%, 45%);
+      line-height: 1.5;
+    }
+
+    .price__flex {
+      display:flex;
+      gap:1rem;
+      align-items: center;
+
+      h2 {
+        margin:0;
+      }
+      p {
+        margin:.5rem 0
+      }
+      p:nth-child(2) {
+        flex-grow:1;
+        color:hsl(25, 100%, 65%);
+      }
+      p:last-child {
+        color:hsl(220, 14%, 75%);
+        text-decoration: line-through ;
+      }
+    }
+
+    .price__flex__add__minus {
+      display:flex;
+      justify-content: space-between;
+      background:hsl(223, 64%, 98%);
+      align-items: center;
+      padding:0 1rem;
+      margin-top:1rem;
+
+      p {
+        font-weight: bolder;
+        color:black;
+
+      }
+      .cart__btn {
+          font-size:1.4rem;
+          color:hsl(25, 100%, 65%);
+          font-weight: bolder;
+          border:none;
+          background: inherit;
+      }
+
+    }
+
+    .addCart__btn {
+      width:100%;
+      padding:1rem;
+      margin-top:1rem;
+      border-radius:10px;
+      border:none;
+      color:hsl(0,0%,100%);
+      font-size:.95rem;
+      font-weight: 700;
+      background:hsl(26, 100%, 55%);
+    }
+  }
+
+
+}
