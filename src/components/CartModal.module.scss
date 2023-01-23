@@ -1,0 +1,110 @@
+.cart__container {
+  background:hsl(0, 0%, 100%);
+  width:95%;
+  height:275px;
+  left:50%;
+  transform: translateX(-50%);
+  position:absolute;
+  top:5rem;
+  z-index:10;
+  border-radius:10px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+  button {
+    cursor:pointer;
+  }
+
+  header {
+    padding:.5rem 1.5rem .1rem 1.5rem;
+  }
+  h3 {
+    font-size:1rem;
+  }
+  hr {
+    opacity:0.2;
+  }
+  .cart__data {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+
+    span {
+      color:hsl(219, 9%, 45%);
+      font-weight: bolder;
+      font-size:1rem;
+    }
+  }
+
+
+  .flex__data {
+    display:flex;
+    gap:1rem;
+    padding:1rem;
+
+    .name__and__price {
+
+      p {
+        font-size:1rem;
+        margin:0;
+        color:hsl(219, 9%, 45%);
+      }
+
+      b {
+        color:hsl(220, 13%, 13%);
+      }
+
+      .price {
+        margin-top:.5rem;
+      }
+    }
+
+    .delete__btn {
+        border:none;
+        background: inherit;
+        width:14px;
+        cursor:pointer;
+    }
+
+    img {
+      width:52px;
+      height:52px;
+      border-radius:5px;
+    }
+
+    .delete__icon {
+      width:14px;
+      height:18px;
+      align-self: center;
+    }
+  }
+
+  .checkout__data {
+
+    .checkout__btn {
+      background:hsl(25, 100%, 65%);
+      color:hsl(223, 64%, 98%);
+      border:none;
+      border-radius:10px;
+      width:90%;
+      font-weight: 700;
+      font-size:.9rem;
+      letter-spacing: 1px;
+      padding:1.2rem;
+      margin:1rem 1rem;
+
+    }
+  }
+}
+
+@media (min-width:1000px) {
+  .cart__container {
+    max-width:375px;
+    height: 275px;
+    left: 88%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 5.8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }

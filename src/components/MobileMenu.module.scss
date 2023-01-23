@@ -1,0 +1,76 @@
+.mobile_menu__container {
+  height:100vh;
+  width:50%;
+  background: hsl(0, 0%, 100%);
+  position:fixed;
+  left:0;
+  top:0;
+  padding:1rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  z-index:10;
+
+  .exit {
+    width:32px;
+    height:32px;
+    background: inherit;
+    border-radius:50%;
+    position: relative;
+    border:none;
+    cursor:pointer;
+  }
+
+  .exit::before {
+    content:"";
+    position:absolute;
+    width:3px;
+    height:16px;
+    border-radius:5px;
+    transform: rotate(45deg);
+    background: hsl(219, 9%, 45%);
+    left:15px;
+    top:8px;
+  }
+
+  .exit::after {
+    content:"";
+    position:absolute;
+    width:3px;
+    height:16px;
+    border-radius:5px;
+    transform: rotate(-45deg);
+    background: hsl(219, 9%, 45%);
+    left:15px;
+    top:8px;
+  }
+  .exit:hover {
+    background:lightgray;
+  }
+
+  .list__menu {
+    margin-top:2rem;
+
+    ul {
+      padding:0 .5rem;
+      list-style: none;
+      line-height: 2.8;
+    }
+
+    li {
+      font-weight: 700;
+      font-size:1.09rem;
+      cursor:pointer;
+    }
+
+  }
+
+}
+
+.Backdrop {
+  height:100vh;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  background: rgba(0, 0, 0, 0.80);
+  z-index:5;
+}
