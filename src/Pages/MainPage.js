@@ -95,7 +95,7 @@ function MainPage() {
             <div className={classes.container}>
                 <nav className={classes.nav__container__desktop}>
                     <ul className={classes.nav__flex__desktop}>
-                        <li><header>sneakers</header></li>
+                        <header>sneakers</header>
                         <li>Collections</li>
                         <li>Men</li>
                         <li>About</li>
