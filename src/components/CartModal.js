@@ -11,7 +11,7 @@ function CartModal(props) {
 
         const decrementAmount = (e) => {
             e.preventDefault();
-            dispatch(productsActions.amountDecrement())
+            dispatch(productsActions.setAmount(0))
         }
 
         return (

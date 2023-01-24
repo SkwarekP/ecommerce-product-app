@@ -57,6 +57,11 @@ body {
     gap:1rem;
     align-items:center;
     padding:1rem 1rem;
+    background: white;
+    position:sticky;
+    top:0;
+    z-index:10;
+
 
     header {
       flex-grow:1;
@@ -173,7 +178,14 @@ body {
       color:hsl(0,0%,100%);
       font-size:.95rem;
       font-weight: 700;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
       background:hsl(26, 100%, 55%);
+    }
+    .addCart__btn::before {
+      content: url("../assets/images/icon-cart.svg");
+      position:absolute;
+      margin-left:-30px;
+      margin-top:-2px;
     }
   }
   .desktop__flex__main__container {
@@ -464,13 +476,8 @@ body {
       .addCart__btn {
         max-width:250px;
         padding:1rem;
-        margin-top:1rem;
-        border-radius:10px;
         border:none;
-        color:hsl(0,0%,100%);
         font-size:.95rem;
-        font-weight: 700;
-        background:hsl(26, 100%, 55%);
       }
       .addCart__btn:hover {
         opacity:0.6;
